@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="com.TMB.listeners.ListenerClass" />
+		<!-- <listener class-name="com.TMB.listeners.AnnotationTransformer" /> -->
+		<listener class-name="com.TMB.listeners.MethodInterceptor" />
+
+	</listeners>
+
+	<test name="Test">
+		<classes>
+			<class
+				name="com.TMB.EmployeeTests.EmployeeTestsWithDataProviderTest" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
